@@ -1,0 +1,23 @@
+Start by building out the html backbone of the page.
+1. Header
+2. Left Pane
+    - Input field
+    - Search button
+    - Placeholder for appending previous search terms
+3. Right Pane
+
+    a. Top half
+    - City, date, weather icon as an h2
+    - Temperature - p
+    - Humidity - p
+    - Wind Speed - p
+    - UV Index - p
+
+    b. Bottom Half
+    - Header as h3 "5-Day Forecast"
+    - 5 cards on a single row, in each card:
+        - Date - h3
+        - Weather icon - img
+        - Temperature - p
+        - Humidity - p
+
