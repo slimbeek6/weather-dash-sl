@@ -1,13 +1,14 @@
 Start by building out the html backbone of the page.
+
 1. Header
 2. Left Pane
     - Input field
     - Search button
-    - Placeholder for appending previous search terms
+    - Placeholder for appending previous search terms, including an id to call
 3. Right Pane
 
     a. Top half
-    - City, date, weather icon as an h2
+    - City, date, weather icon as an h2 
     - Temperature - p
     - Humidity - p
     - Wind Speed - p
@@ -20,4 +21,44 @@ Start by building out the html backbone of the page.
         - Weather icon - img
         - Temperature - p
         - Humidity - p
+
+*For all of the elements on the right pane will need to have unique id's to call on when displaying the external data.*
+
+<br>
+
+Next connect to the external source of the weather data via the OpenWeather API
+
+Start by defining an APIUrl variable for the current weather data, and a second APIUrl for the forecast data.
+
+When defining these urls, include variables for the location, as well as the correct parameters to get the information in imperial units. (units=imperial)
+
+For the first APIUrl which is accessing the current weather data, we will need to define what to grab from the weather object.
+- Current date - list.dt_txt
+- Temperature icon - list.weather.icon
+- Humidity - list.main.humidity
+- Wind Speed - list.wind.speed
+
+For the second APIUrl which is accessing the future weather data, we will need to call the following information
+- Ensure that we run with parameters setting the correct date.
+
+<br>
+
+Once we have the data that we need from the external api, we will need to get the data to display on the page.
+
+To do this we will need to create the elements we want to add to the page with jQuery, then add the information to these elements.
+
+Once we have the elements created and have the information in the elements, we need to add the elements to the page using jQuery and the previously defined IDs
+
+<br>
+
+Finally we need to create a listener that initiates the functions above.
+
+Using an onClick function we can pull down the entered city in the input field and use it to define the APIUrls.
+
+At the same time, we will need to append the name of the city to the placeholder below the search button, and make it a button with a data attribute of the entered search term.
+
+Using an onClick function, we will create another function that runs when the user clicks a previous search term button.
+
+This function will take the data attribute of the search term, and run the same functions that the previous onClick runs, but with this data attribute as the city in the apiUrls.
+
 
