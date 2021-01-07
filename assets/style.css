@@ -7,12 +7,13 @@ header {
     padding: 2% 0%;
 }
 
-.col-md-3 {
-    
+aside {
     padding: 1% 2% 80% 2%;
-    background-color: lightgray;
-    
+    background-color: lightgray; 
+}
 
+form {
+    padding: 2%;
 }
 
 label {
@@ -24,4 +25,24 @@ label {
     color: white;
     background-color: blue;
     padding: 2px 2px;
+}
+
+#topPane {
+    padding: 2% 0% 2% 2%;
+    margin: 1% 0% 2% 0%;
+}
+
+article {
+    float: left;
+    margin: 1%;
+    padding: 1%;
+    background-color: rgb(141, 142, 231);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
 }
