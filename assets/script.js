@@ -19,7 +19,7 @@ $(document).ready(function () {
             var lat = response.coord.lat;
             var lon = response.coord.lon;
             var cityDisplay = response.name;
-            $("#prevSearches").append("<button id='"+cityDisplay+"'>" + cityDisplay + "</button><br><br>");
+            $("#prevSearches").prepend("<button id='"+cityDisplay+"'>" + cityDisplay + "</button><br><br>");
                         
             var searchURL = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=imperial&appid=a45e37d740e9d3f5adbe9fe5c4a14ffc";
             
