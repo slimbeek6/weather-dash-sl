@@ -3,7 +3,7 @@
 
 ## Summary
 
-
+The ask was to create a dynamically updated weather dashboard, where a user can choose the city they would like, and they will be returned the current weather conditions, as well as a five day weather forecast.
 
 <hr>
 
@@ -12,10 +12,15 @@
 
 ## Pseudo Code & Key Code Elements
 
-
+There were 5 key steps to creating the page, and updating the back-end to create the working dashboard.
 
 **Creating the HTML Backbone**
 
+First was the creation of the HTML and CSS Backbone. This involved establishing the desired output visuals, and creating the necessary HTML elements that will be able to display the desired information.
+
+Once we have defined and coded the initial output view in HTML, we need to overlay CSS to ensure that the information is presented in a clean and digestible fashion.
+
+To do this, we used a combination of Bootstrap and homemade CSS code, attaching the CSS to the different HTML elements via their classes and html types.
 
 
 **Calling the Necessary Data**
