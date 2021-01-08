@@ -17,7 +17,7 @@
         <aside class="col-md-3">
             <form id="leftPane">
                 <label for="city">Search for a City:</label><br><br>
-                <input id="city">
+                <input id="cityInput">
                 <button id="search" class="fas fa-search"></button>
             </form>
             <hr/>
@@ -28,7 +28,8 @@
         <section class="col-md-9">
             <!-- Create top part -->
             <div class="card" id="topPane">
-                <h3 id="cityDateIcon">Atlanta</h3>
+                <h3><span id="cityDateIcon"></span></h3>
+                
             </div>
 
             <!-- Create bottom part -->
@@ -72,5 +73,7 @@
 
     </main>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
