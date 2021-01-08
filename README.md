@@ -8,7 +8,7 @@ The ask was to create a dynamically updated weather dashboard, where a user can 
 <hr>
 
 ## Example of Output
-![Picture of Website](./Assets/pic-of-site.png)
+![Picture of Website](./assets/pic-of-site.png)
 
 ## Pseudo Code & Key Code Elements
 
