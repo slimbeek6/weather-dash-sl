@@ -8,7 +8,7 @@ header {
 }
 
 aside {
-    padding: 1% 2% 80% 2%;
+    padding: 1% 2% 37% 2%;
     background-color: lightgray; 
 }
 
@@ -45,4 +45,8 @@ article {
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
+}
+
+#prevSearches {
+    margin-left: 2%;
 }

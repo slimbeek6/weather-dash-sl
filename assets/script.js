@@ -52,7 +52,7 @@ $(document).ready(function () {
                     var laterTemp = response.daily[i].temp.day;
                     var laterHumidity = response.daily[i].humidity;
                     var laterIcon = response.daily[i].weather[0].icon;
-                    var imgSource = "https://openweathermap.org/img/wn/"+laterIcon+".png";
+                    var imgSource = "https://openweathermap.org/img/wn/"+laterIcon+"@2x.png";
 
                     $("#date"+i).text(laterDateDisplay);
                     $("#icon"+i).attr("src", imgSource);
@@ -125,7 +125,7 @@ $(document).ready(function () {
                     var laterTemp = response.daily[i].temp.day;
                     var laterHumidity = response.daily[i].humidity;
                     var laterIcon = response.daily[i].weather[0].icon;
-                    var imgSource = "https://openweathermap.org/img/wn/"+laterIcon+".png";
+                    var imgSource = "https://openweathermap.org/img/wn/"+laterIcon+"@2x.png";
 
                     $("#date"+i).text(laterDateDisplay);
                     $("#icon"+i).attr("src", imgSource);
