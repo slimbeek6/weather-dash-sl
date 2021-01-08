@@ -43,7 +43,22 @@ $(document).ready(function () {
                 $("#curTemp").text(curTempDisplay);
                 $("#curHum").text(curHumidityDisplay);
                 $("#curSpeed").text(windSpeed);
-                $("#curUVI").text(uvIndex);
+                $("#curUVI").text(" "+uvIndex+" ");
+                if (uvIndex > 10) {
+                    $("#curUVI").attr("style", "background-color: violet; color:white");
+                }
+                else if (uvIndex < 2.5) {
+                    $("#curUVI").attr("style", "background-color: limegreen; color:black");
+                } 
+                else if (uvIndex >2.5 && uvIndex <5){
+                    $("#curUVI").attr("style", "background-color: yellow; color:black");
+                }
+                else if (uvIndex >5 && uvIndex < 7.5){
+                    $("#curUVI").attr("style", "background-color: orange; color:black");
+                }
+                else {
+                    $("#curUVI").attr("style", "background-color: red; color:white");
+                }
 
                 for (i=1; i<6; i++) {
                     var laterDate = response.daily[i].dt;

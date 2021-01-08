@@ -25,7 +25,9 @@ To do this, we used a combination of Bootstrap and homemade CSS code, attaching 
 
 **Calling the Necessary Data**
 
+The key back-end work comes next, which is comprised of fetching the weather data from an external source on the web via an API.
 
+To do this, it was necessary to run a pair of APIs, as the parameters included in the forecast data do not allow for a direct input of a city name.  Because of this the first API pull that is made is to the API endpoint that has the city name as one of the endpoint data elements.
 
 **Displaying Data**
 
